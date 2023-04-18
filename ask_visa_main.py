@@ -5,6 +5,7 @@ import logging
 
 tone = 'formal'
 persona = 'buddha'
+data = getTextsData()
 
 if "generated" not in st.session_state:
     # generated output
@@ -35,7 +36,7 @@ MODEL = st.sidebar.selectbox(label='Model', options=['gpt-3.5-turbo', 'text-davi
 if API:
     llm = getModel(API, MODEL)
     chain = getQAChain(llm)
-    docsearch = getDocSearchFromData(API)
+    docsearch = getDocSearchFromData(API, data)
     user_input = askQuestion()
 
     if user_input:

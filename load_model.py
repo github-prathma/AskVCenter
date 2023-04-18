@@ -11,9 +11,9 @@ def getModel(apiKey, modelName):
     return ChatOpenAI(temperature=0.7, openai_api_key=apiKey, model_name=modelName)
     
 
-def getDocSearchFromData(apiKey):
+def getDocSearchFromData(apiKey, data):
     embeddings = OpenAIEmbeddings(openai_api_key=apiKey)
-    return FAISS.from_documents(loadDataFromUrls(), embeddings)
+    return FAISS.from_documents(data, embeddings)
 
 def getQAChain(llm):
     if "buffer_memory" not in st.session_state:

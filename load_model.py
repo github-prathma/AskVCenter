@@ -1,6 +1,4 @@
 from langchain.chat_models import ChatOpenAI
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
@@ -10,10 +8,6 @@ import streamlit as st
 def getModel(apiKey, modelName):
     return ChatOpenAI(temperature=0.7, openai_api_key=apiKey, model_name=modelName)
     
-
-def getDocSearchFromData(apiKey, data):
-    embeddings = OpenAIEmbeddings(openai_api_key=apiKey)
-    return FAISS.from_documents(data, embeddings)
 
 def getQAChain(llm):
     if "buffer_memory" not in st.session_state:

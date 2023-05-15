@@ -51,6 +51,7 @@ if API:
                         "human_input": user_input,
                         "tone": tone,
                         "persona": persona,
+                        "category": CATEGORY
                     },
                     return_only_outputs=True,
                 )["output_text"]

@@ -27,7 +27,7 @@ def getQAChain(llm):
             If you don't know the answer, just say that you don't know. Don't try to make up an answer. 
             If the question from another category is asked, just say that questions asked to relevant category {category} can only be answered and 
             please select another category to get answers specific to selected category.
-            ALWAYS return a "SOURCES" part in your answer.
+            ALWAYS return a "SOURCES" part in your answer.\n
             SOURCES should only be hyperlink URLs which are genuine and not made up.
             
             {context}

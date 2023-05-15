@@ -15,4 +15,4 @@ AskVCenter is conversational AI Assistant tool built using [Streamlit](https://d
 
 - Install packages in ***requirements.txt*** file using `pip install -r requirements.txt`
 
-- Run `streamlit run ask_visa_main.py` to run application on **http://localhost:8501/**
+- Run `streamlit run vcenter_main.py` to run application on **http://localhost:8501/**

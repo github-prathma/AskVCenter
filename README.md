@@ -3,14 +3,13 @@ AskVCenter is conversational AI Assistant tool built using [Streamlit](https://d
 
 ## Pre-requisites
 
-<em>Requires OpenAI API Key</em>.
-To get yours, visit [OpenAI Platform page](https://docs.streamlit.io/library/get-started)
+- <em>Requires OpenAI API Key</em>. To get yours, visit [OpenAI Platform page](https://docs.streamlit.io/library/get-started)
+
+- Python3
 
 ## Steps to run
 
 - Clone repository
-
-- Install python3
 
 - Install streamlit using `pip install streamlit`
 
